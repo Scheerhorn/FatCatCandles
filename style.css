@@ -65,6 +65,18 @@ ul li a:hover{
     display: none;
 }
 
+#open-sidebar-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#close-sidebar-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 700px){
     nav{
         position: fixed;
@@ -76,6 +88,7 @@ ul li a:hover{
         width: 70vw;
         z-index: 10;
         border: 1px solid black;
+        transition: left 300ms ease-out;
     }
 
     nav.show{
