@@ -26,6 +26,7 @@ body{
     color: #663300;
     font-size: clamp(3.7rem, 12vw, 5rem);
     text-align: center;
+    margin: 1rem;
 }
 
 .links{
@@ -34,7 +35,7 @@ body{
     justify-content: space-evenly;
 }
 
-nav{
+.navLinks{
     background-color: #ffcc99;
     display: flex;
     justify-content: center;
@@ -53,12 +54,14 @@ nav ul{
     width: 100vw;
 }
 
-nav a{
-    padding: 1em 2em;
-}
+
 
 .headerLogoDesktop {
     height: clamp(95px, 15vw, 95px);
+}
+
+.mobileNav {
+    display: none;
 }
 
 @media screen and (max-width: 700px){
@@ -71,7 +74,6 @@ nav a{
         height: 80%;
         width: 100vw;
         z-index: 10;
-        border-left: 1px solid black;
     }
 
     nav ul{
@@ -85,7 +87,16 @@ nav a{
     }
 
     .headerLogoMobile{
-        height: clamp(95px, 2vw, 1rem);
+        height: clamp(.5rem, 18vw, 4rem);
+    }
+
+    .mobileNav{
+        background-color: #ffcc99;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2.2rem;
+        height: 3rem;
     }
 }
 
