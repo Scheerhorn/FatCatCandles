@@ -96,12 +96,13 @@ ul li a:hover{
         height: clamp(.5rem, 18vw, 4rem);
     }
 
+
     .mobileNav{
         background-color: #ffcc99;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: .5rem;
+        padding: .35rem 2rem;
         border: 1px solid black;
     }
 
