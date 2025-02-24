@@ -78,13 +78,16 @@ ul li a:hover{
         border: 1px solid black;
     }
 
+    nav.show{
+        left: 0;
+    }
     
     nav ul{
         width: 100%;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        height: 100%;
+        height: 100vh;
         font-size: 1.5rem;
     }
 
