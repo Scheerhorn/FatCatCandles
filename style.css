@@ -12,11 +12,19 @@ body{
     background-color: #ff9933;
 }
 
+.playwrite-it-moderna-font {
+    font-family: "Playwrite IT Moderna", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+
 .logo{
     display: flex;
     justify-content: center;
     color: #663300;
-    font-size: clamp(5rem, 13vw, 8rem);
+    font-size: clamp(3.7rem, 12vw, 5rem);
     text-align: center;
 }
 
@@ -28,22 +36,39 @@ body{
 
 nav{
     background-color: #ffcc99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
 }
 
 nav ul{
-    display: flex;
-    justify-content: center;
     list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Playwrite IT Moderna", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    width: 100vw;
+}
+
+nav a{
+    padding: 1em 2em;
+}
+
+.headerLogoDesktop {
+    height: clamp(95px, 15vw, 95px);
 }
 
 @media screen and (max-width: 700px){
-    nav{
+    .navLinks{
         position: fixed;
-        top: 40%;
+        top: 4rem;
         right: 0;
-        left: 0;
-        bottom: 1500px;
-        height: 100vw;
+        left: -100%;
+        bottom: 0;
+        height: 80%;
         width: 100vw;
         z-index: 10;
         border-left: 1px solid black;
@@ -52,9 +77,15 @@ nav ul{
     nav ul{
         width: 100%;
         flex-direction: column;
+        align-items: center;
+    }
+
+    .headerLogoDesktop{
+        display: none;
+    }
+
+    .headerLogoMobile{
+        height: clamp(95px, 2vw, 1rem);
     }
 }
 
-.headerLogo {
-    height: clamp(95px, 15vw, 200px);
-}
