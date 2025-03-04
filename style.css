@@ -106,7 +106,6 @@ ul li a:hover{
     flex-wrap: wrap;
     padding: 4vw;
     gap: 3vw;
-    border: solid black;
 }
 
 .listings img {
