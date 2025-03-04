@@ -174,7 +174,7 @@ ul li a:hover{
     }
 
     .listings img {
-        height: 32vw;
-        width: 32vw;
+        height: clamp(150px, 32vw, 800rem);
+        width: clamp(150px, 32vw, 800rem);
     }
 }
