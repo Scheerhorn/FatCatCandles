@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <h1" class="playwrite-it-moderna-font">Fat Cat Candles</h1>
+            </a>
+            <img src="image1.svg" class="headerLogoDesktop">
+        </div>
+        <nav id="navBar">
+            <div class="navLinks">
+                <ul>
+                    <button id="close-sidebar-button" onclick="closeSidebar()">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="collaborations.html">Collaborations</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="localCatzOnly.html">Local Catz Only</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+        <div class="mobileNav">
+            <button id="open-sidebar-button" onclick="openSidebar()">
+                <i class="fa-solid fa-bars" class="bars"></i>
+            </button>
+            <img src="image1.svg" class="headerLogoMobile">
+        </div>
+    </header>
+    <h2>About Page</h2>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/3dfdd6bf3b.js" crossorigin="anonymous"></script>
+</body>
+</html>
