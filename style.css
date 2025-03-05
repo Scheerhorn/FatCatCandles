@@ -12,8 +12,12 @@ a{
 a:hover,
 a:focus,
 a:active {
-  text-decoration: underline;
+    text-decoration: underline;
 }
+
+.underlined {
+    text-decoration: underline;
+    }
 
 body{
     background-color: #ff9933;
